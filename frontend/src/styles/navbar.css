@@ -1,0 +1,8 @@
+.navbar{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-size: large;
+    padding-right: 50px;
+    padding-top: 30px;
+}

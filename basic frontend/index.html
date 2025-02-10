@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete HTML & CSS Learning Guide">
+    <title>Ultimate HTML & CSS Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    
+</head>
+<body>
+    <style>
+        .animated-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff00d4;
+            text-align: center;
+            animation: bounce 1.5s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+    
+    <h2 class="animated-heading">Hello, World! <style> =  .animated-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ff00dd;
+        text-align: center;
+        animation: bounce 1.5s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }</style></h2>
+
+
+    <nav class="navbar">
+        <h1>HTML & CSS Explorer</h1>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+    <h2 class="animated-heading">Hello, World!, <style>= </style></h2>
+    <header class="hero">
+        <h2>Welcome to the Complete HTML & CSS Learning Guide</h2>
+        <p>Explore various elements, tags, and styles!</p>
+    </header>
+
+    <section class="text-format">
+        <h2>🔤 Text Formatting</h2>
+        <p>This is a <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+        <p><mark>Highlighted text</mark> and <code>inline code</code>.</p>
+        <p>Superscript: x<sup>2</sup>, Subscript: H<sub>2</sub>O</p>
+        <p>Preformatted Text:</p>
+        <pre>
+        function hello() {
+            console.log("Hello, World!");
+        }
+        </pre>
+    </section>
+
+    <section class="lists">
+        <h2>📋 Lists</h2>
+        <ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol>
+        <ul>
+            <li>Bullet 1</li>
+            <li>Bullet 2</li>
+        </ul>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+        </dl>
+    </section>
+
+    <section class="links">
+        <h2>🔗 Links & Images</h2>
+        <p>Visit <a href="https://www.google.com" target="_blank">Google</a>.</p>
+        <img src="image.jpg" alt="Example Image" width="200">
+    </section>
+
+    <section class="tables">
+        <h2>📊 Tables</h2>
+        <table>
+            <caption>Student Scores</caption>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>90</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>175</td>
+            </tr>
+        </table>
+    </section>
+    <!-- <button style="background: #ff5733; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 1.2rem; cursor: pointer; transition: 0.3s;">
+        Click Me!
+    </button>
+     -->
+    <section class="forms">
+        <h2>📝 Forms & Inputs</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <fieldset>
+                <legend>Choose an option:</legend>
+                <input type="radio" id="option1" name="option">
+                <label for="option1">Option 1</label>
+                <input type="radio" id="option2" name="option">
+                <label for="option2">Option 2</label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2); text-align: center; width: 250px;">
+        <h3 style="color: #007bff;">Title</h3>
+        <p style="color: #555;">This is a beautiful card!</p>
+    </div> -->
+    
+    <section class="semantic">
+        <h2>📌 Semantic Elements</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>This is an article inside a `<article>` tag.</p>
+        </article>
+    </section>
+
+    <section class="media">
+        <h2>🎥 Multimedia</h2>
+        <video controls width="300">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="husn.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <section class="html5">
+        <h2>🆕 HTML5 Features</h2>
+        <progress value="70" max="100"></progress>
+        <details>
+            <summary>Click to Expand</summary>
+            <p>Additional Information!</p>
+        </details>
+    </section>
+
+    <section class="flexbox">
+        <h2>📦 Flexbox Layout</h2>
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+    </section>
+
+    <section class="grid">
+        <h2>🎯 CSS Grid Layout</h2>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ by Developers</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

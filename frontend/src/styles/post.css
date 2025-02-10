@@ -1,0 +1,40 @@
+.meme-container {
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.meme-card {
+  cursor: pointer;
+  width: 300px;
+  padding: 20px;
+}
+
+.meme-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.meme-info {
+  margin-top: 20px;
+}
+
+.meme-info h2 {
+  font-size: 22px;
+}
+
+.meme-info p {
+  font-size: 16px;
+  color: #555;
+}

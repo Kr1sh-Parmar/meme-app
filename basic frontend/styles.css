@@ -1,0 +1,195 @@
+/* 🎨 CSS Variables (Using rem for better scaling) */
+:root {
+    --main-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-gradient: linear-gradient(135deg, #1e3c72, #2a5298);
+    --text-color: #ffffff;
+    --box-shadow: 0px 0.375rem 0.75rem rgba(0, 0, 0, 0.3);
+    --border-radius: 0.875rem;
+    --hover-glow: 0px 0px 0.9375rem rgba(255, 255, 255, 0.4);
+}
+
+/* 🌍 Global Styles */
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    transition: background 0.5s ease-in-out;
+    font-size: 1rem; /* Base size for em calculations */
+}
+
+/* 📌 Navbar */
+.navbar {
+    background: var(--main-color);
+    color: white;
+    padding: 1.2rem 5vw; /* Viewport width for dynamic spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    font-size: 1.3rem;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.0625rem;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* 🏆 Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1.25rem);
+    border-radius: var(--border-radius);
+    margin: 5% auto;
+    width: 80%;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.125em; /* Relative to parent */
+}
+
+.hero:hover {
+    transform: scale(1.02);
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    text-shadow: 0.1875rem 0.1875rem 0.375rem rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 120%; /* Relative to parent */
+    opacity: 0.9;
+}
+
+/* 📦 Flexbox Layout */
+.flex-container {
+    display: flex;
+    gap: 1.5625rem;
+    justify-content: center;
+    padding: 1.875rem;
+}
+
+.flex-item {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 1.5625rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    text-align: center;
+    backdrop-filter: blur(0.625rem);
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+    box-shadow: var(--hover-glow);
+}
+
+/* 🎯 CSS Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5625rem;
+    padding: 1.875rem;
+}
+
+.grid-item {
+    background: var(--main-color);
+    color: white;
+    padding: 1.5625rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: var(--hover-glow);
+}
+
+/* 🔄 Transitions & Animations */
+button {
+    background: var(--main-color);
+    color: white;
+    padding: 0.75rem 1.5625rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ✨ Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.03125rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+/* 🎯 Pseudo-elements & Effects */
+h2::before {
+    content: "🚀 ";
+    color: yellow;
+}
+
+button:hover::after {
+    content: " ✨";
+}
+
+/* 📲 Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 2.5rem;
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
